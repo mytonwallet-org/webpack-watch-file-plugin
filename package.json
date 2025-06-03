@@ -1,0 +1,26 @@
+{
+  "name": "webpack-watch-file-plugin",
+  "version": "1.0.0",
+  "description": "Simple webpack plugin to watch files and run commands when they change",
+  "homepage": "https://github.com/mytonwallet-org/webpack-watch-file-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/mytonwallet-org/webpack-watch-file-plugin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mytonwallet-org/webpack-watch-file-plugin.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "index.ts",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "glob": "^11.0.2",
+    "glob-parent": "^6.0.2",
+    "minimatch": "^10.0.1",
+    "webpack": ">=5"
+  }
+}
