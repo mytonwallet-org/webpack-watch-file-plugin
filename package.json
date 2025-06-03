@@ -12,8 +12,15 @@
   },
   "license": "MIT",
   "type": "module",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build:code": "tsc",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
+    "build": "npm run build:code && npm run build:types"
+  },
   "devDependencies": {
+    "@types/glob-parent": "^5.1.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
